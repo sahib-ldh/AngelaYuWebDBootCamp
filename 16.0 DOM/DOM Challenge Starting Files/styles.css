@@ -1,3 +1,14 @@
 h1 {
   color: red;
 }
+.invisible 
+{
+  visibility: hidden;
+}
+.huge
+{
+  font-size: 3rem;
+  color: Red;
+  font-family: cursive;
+  font-weight: bold;
+}
