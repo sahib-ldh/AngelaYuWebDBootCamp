@@ -8,7 +8,7 @@ $(document).ready(function() {
     $('#add-task').click(function() {
       const taskText = $('#new-task').val();
       if (taskText.trim() !== '') {
-        $('#todo-list').append('<li>' + taskText + '</li>');
+        $('#todo-list').append(' <li class="list-group-item task-text"> ' + taskText + '</li>');
         $('#new-task').val(''); // clear input
       } else {
         alert("Please enter a task.");
@@ -20,6 +20,11 @@ $(document).ready(function() {
       if (e.which === 13) {
         $('#add-task').click();
       }
-    });
-  });
+    }); 
+    //Delete button
+   
   
+
+  });
+
+ 

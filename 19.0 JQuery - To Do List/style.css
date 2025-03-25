@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+  }
+  .completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  footer
+  {
+    margin-top: 20%;
+    text-align: center;
+  }
+  .danger
+  {
+    margin-left: 90%;
+  }
