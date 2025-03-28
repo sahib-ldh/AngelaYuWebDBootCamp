@@ -11,18 +11,22 @@ var bandName = "";
 
 app.use(bodyParser.urlencoded({extended:true}));
 
-function bandNameGenerator(req,res,next){
+/*  another way of doing it...
+  function bandNameGenerator(req,res,next){
   console.log(req.body);
   bandName = req.body["street"] + req.body["pet"];
   next();
 }
 app.use(bandNameGenerator);
+*/
+
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
 
 app.post("/submit", (req,res)=>{
-  res.send(`<h1>Your band name is:</h1><h2>${bandName}✌️</h2>`);
+  bandName = req.body["street"] + req.body["pet"];
+  res.send(`<h1>Your band name is: ${bandName}✌️</h1>`);
 
 }); 
 
