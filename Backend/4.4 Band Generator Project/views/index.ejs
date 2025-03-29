@@ -8,8 +8,8 @@
     Show the default h1 below -->
     <% if (locals.adjective && locals.noun) { %>
       <h1>
-        <%= adjective %>
-          <%= noun %>
+        <%= adjective.toUpperCase() %>
+          <%= noun.toUpperCase() %>
       </h1>
       <% } else { %>
         <h1>Welcome to the Band Generator 🤟</h1>
